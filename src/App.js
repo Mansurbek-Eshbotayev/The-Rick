@@ -36,9 +36,9 @@ function App() {
       (todos.length && <ul className='card__list'>
       {
         todos.map(todo => (
-          <div >
+          <div key={todo.id}>
             {
-              <Card img={todo.image} name={todo.name} status={todo.status} species={todo.species} location={todo.location.name} ganer={todo.gender}/>
+              <Card  img={todo.image} name={todo.name} status={todo.status} species={todo.species} location={todo.location.name} ganer={todo.gender}/>
             }
           </div>
 
